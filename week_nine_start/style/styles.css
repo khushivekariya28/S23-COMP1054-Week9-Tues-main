@@ -1,0 +1,132 @@
+/* General Reset */ 
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Typography */ 
+
+/* body content */ 
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;   
+}
+
+/* headings */
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Rampart One', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 65px 0;
+    margin: 0;
+}
+
+p:has(> a) {
+    text-align: center; 
+}
+
+/* Layout & Apperance */ 
+
+header {
+    height: 15vw;
+    background-color:#FF8360; 
+    color: #fff;   
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80vw; 
+    margin: 0 auto;
+    border: 2px solid #999; 
+    padding: 1em;  
+}
+
+/* section */ 
+
+section {
+    display: flex;
+    padding: 10px;
+}
+  
+section p {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+section p:first-child {
+    flex: 2;
+}
+  
+section p:not(:first-child) {
+    flex: 1;
+}
+  
+main section > div + p {
+    background-color: #3CDBD3;
+    padding: 1em;
+}  
+
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;  
+}
+
+main section > div p a {
+    margin-top: 10px;
+    color: #9944a6;
+    text-decoration: underline;
+}
+
+/* footer */ 
+
+footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+  
+
+footer p,
+footer a {
+    background-color:#7DCE82; 
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;  
+    margin: 0;
+    flex: 1;
+}
+
+
+footer p:nth-child(1) {
+    order: 3;
+}
+
+footer p:nth-child(2) {
+    order: 2;
+}
+  
+footer a {
+    background-color:#FF8360;
+    order: 1;
+    flex: 0 0 15%;
+}
+
+footer a:hover {
+    background-color: #9C528B; 
+}
+
